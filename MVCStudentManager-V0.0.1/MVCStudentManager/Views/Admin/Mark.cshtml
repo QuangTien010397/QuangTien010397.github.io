@@ -1,0 +1,66 @@
+﻿@using MVCStudentManager.Models
+@using PagedList.Mvc;
+@model PagedList.PagedList<MVCStudentManager.Models.DiemMon>
+
+@{
+    ViewBag.Title = "Mark";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2 style="text-align:center">Danh sách Điểm</h2>
+<button>
+    @Html.ActionLink("Thêm mới", "ThemDiem")
+</button>
+<table class="table">
+    <tr>
+        <th style="width:100px">Học kì</th>
+        <th style="width:200px">Học sinh</th>
+        <th style="width:200px">Môn học</th>
+        <th style="width:200px">Điểm 15 phút</th>
+        <th style="width:200px">Điểm 1 tiết</th>
+        <th style="width:200px">Điểm 1 học kỳ</th>
+        <th style="width:200px">Điểm trung bình</th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.HocKy.TenHocKy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HocSinh.HoTen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MonHoc.TenMon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Diem15phut)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Diem1Tiet)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiemHK)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiemTB)
+            </td>
+            <td>
+                @Html.ActionLink("Sửa", "SuaDiem", new { id = item.MaDiemMon }) |
+                @Html.ActionLink("Xóa", "XoaDiem", new { id = item.MaDiemMon })
+            </td>
+        </tr>
+    }
+</table>
+
+Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+<div class="MenuTrang">
+    @Html.PagedListPager(Model, page => Url.Action("Student", new { page = page }))
+</div>
+<style>
+    .MenuTrang li {
+        display: inline;
+    }
+</style>
