@@ -1,0 +1,392 @@
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\ApplicationInsights.config
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\MVCStudentManager.dll.config
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\MVCStudentManager.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\MVCStudentManager.pdb
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\csc.exe
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\csc.exe.config
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\csc.rsp
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\csi.exe
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\csi.exe.config
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\csi.rsp
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\System.AppContext.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Collections.Immutable.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Console.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Diagnostics.Process.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\System.IO.Compression.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\System.IO.FileSystem.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\System.IO.Pipes.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Reflection.Metadata.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.AccessControl.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.Claims.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Threading.Thread.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\System.ValueTuple.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Xml.XPath.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\vbc.exe
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\vbc.exe.config
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\vbc.rsp
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\VBCSCompiler.exe
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\roslyn\VBCSCompiler.exe.config
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\Antlr3.Runtime.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\EntityFramework.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\EntityFramework.SqlServer.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.DependencyCollector.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.Web.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.WindowsServer.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\Microsoft.ApplicationInsights.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\Microsoft.Web.Infrastructure.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\Newtonsoft.Json.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\PagedList.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\PagedList.Mvc.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\System.Web.Helpers.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\System.Web.Mvc.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\System.Web.Optimization.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\System.Web.Razor.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\System.Web.WebPages.Deployment.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\System.Web.WebPages.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\System.Web.WebPages.Razor.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\WebGrease.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\EntityFramework.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\EntityFramework.SqlServer.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\PagedList.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\PagedList.Mvc.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\System.Web.Helpers.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\System.Web.Mvc.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\System.Web.Optimization.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\System.Web.Razor.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\System.Web.WebPages.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\System.Web.WebPages.Deployment.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\System.Web.WebPages.Razor.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\Antlr3.Runtime.pdb
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\Newtonsoft.Json.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\Microsoft.ApplicationInsights.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.DependencyCollector.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.WindowsServer.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.Web.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\obj\Debug\MVCStudentManager.csproj.CoreCompileInputs.cache
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\obj\Debug\MVCStudentManager.csproj.CopyComplete
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\obj\Debug\MVCStudentManager.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\obj\Debug\MVCStudentManager.pdb
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công cụ phát triển phần mềm\Lý thuyết\MVCStudentManager\MVCStudentManager\obj\Debug\MVCStudentManager.csprojResolveAssemblyReference.cache
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\ApplicationInsights.config
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\MVCStudentManager.dll.config
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\MVCStudentManager.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\MVCStudentManager.pdb
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\csc.exe
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\csc.exe.config
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\csc.rsp
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\csi.exe
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\csi.exe.config
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\csi.rsp
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.AppContext.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Collections.Immutable.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Console.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Diagnostics.Process.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.IO.Compression.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.IO.FileSystem.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.IO.Pipes.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Reflection.Metadata.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.AccessControl.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.Claims.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.Principal.Windows.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Threading.Thread.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.ValueTuple.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Xml.XmlDocument.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Xml.XPath.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\vbc.exe
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\vbc.exe.config
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\vbc.rsp
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\VBCSCompiler.exe
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\VBCSCompiler.exe.config
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Antlr3.Runtime.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\EntityFramework.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\EntityFramework.SqlServer.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.Agent.Intercept.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.DependencyCollector.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.Web.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.WindowsServer.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.ApplicationInsights.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.Web.Infrastructure.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Newtonsoft.Json.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\PagedList.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\PagedList.Mvc.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.Helpers.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.Mvc.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.Optimization.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.Razor.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.WebPages.Deployment.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.WebPages.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.WebPages.Razor.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\WebGrease.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\EntityFramework.xml
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\EntityFramework.SqlServer.xml
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\PagedList.xml
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\PagedList.Mvc.xml
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.Helpers.xml
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.Mvc.xml
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.Optimization.xml
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.Razor.xml
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.WebPages.xml
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.WebPages.Deployment.xml
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.WebPages.Razor.xml
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Antlr3.Runtime.pdb
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Newtonsoft.Json.xml
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.ApplicationInsights.xml
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.DependencyCollector.xml
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.WindowsServer.xml
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.Web.xml
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\obj\Debug\MVCStudentManager.csproj.CoreCompileInputs.cache
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\obj\Debug\MVCStudentManager.csproj.CopyComplete
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\obj\Debug\MVCStudentManager.dll
+D:\MVCStudentManager\MVCStudentManager\MVCStudentManager\obj\Debug\MVCStudentManager.pdb
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\ApplicationInsights.config
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\MVCStudentManager.dll.config
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\MVCStudentManager.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\MVCStudentManager.pdb
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\csc.exe
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\csc.exe.config
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\csc.rsp
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\csi.exe
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\csi.exe.config
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\csi.rsp
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.AppContext.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Collections.Immutable.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Console.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Diagnostics.Process.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.IO.Compression.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.IO.FileSystem.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.IO.Pipes.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Reflection.Metadata.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.AccessControl.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.Claims.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Threading.Thread.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.ValueTuple.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Xml.XPath.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\vbc.exe
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\vbc.exe.config
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\vbc.rsp
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\VBCSCompiler.exe
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\roslyn\VBCSCompiler.exe.config
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Antlr3.Runtime.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\EntityFramework.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\EntityFramework.SqlServer.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.DependencyCollector.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.Web.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.WindowsServer.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.ApplicationInsights.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.Web.Infrastructure.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Newtonsoft.Json.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\PagedList.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\PagedList.Mvc.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.Helpers.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.Mvc.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.Optimization.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.Razor.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.WebPages.Deployment.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.WebPages.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.WebPages.Razor.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\WebGrease.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\EntityFramework.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\EntityFramework.SqlServer.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\PagedList.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\PagedList.Mvc.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.Helpers.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.Mvc.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.Optimization.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.Razor.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.WebPages.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.WebPages.Deployment.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\System.Web.WebPages.Razor.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Antlr3.Runtime.pdb
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Newtonsoft.Json.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.ApplicationInsights.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.DependencyCollector.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.WindowsServer.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.Web.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\obj\Debug\MVCStudentManager.csproj.CoreCompileInputs.cache
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\obj\Debug\MVCStudentManager.csproj.CopyComplete
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\obj\Debug\MVCStudentManager.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager\MVCStudentManager\MVCStudentManager\obj\Debug\MVCStudentManager.pdb
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\ApplicationInsights.config
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\MVCStudentManager.dll.config
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\MVCStudentManager.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\MVCStudentManager.pdb
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\csc.exe
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\csc.exe.config
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\csc.rsp
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\csi.exe
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\csi.exe.config
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\csi.rsp
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\System.AppContext.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Console.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Diagnostics.Process.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\System.IO.Compression.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\System.IO.FileSystem.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\System.IO.Pipes.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Reflection.Metadata.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.AccessControl.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.Claims.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Threading.Thread.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\System.ValueTuple.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Xml.XPath.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\vbc.exe
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\vbc.exe.config
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\vbc.rsp
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\VBCSCompiler.exe
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\roslyn\VBCSCompiler.exe.config
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\Antlr3.Runtime.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\EntityFramework.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\EntityFramework.SqlServer.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.DependencyCollector.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.Web.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.WindowsServer.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\Microsoft.ApplicationInsights.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\Microsoft.Web.Infrastructure.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\Newtonsoft.Json.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\PagedList.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\PagedList.Mvc.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\System.Web.Helpers.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\System.Web.Mvc.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\System.Web.Optimization.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\System.Web.Razor.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\System.Web.WebPages.Deployment.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\System.Web.WebPages.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\System.Web.WebPages.Razor.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\WebGrease.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\EntityFramework.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\EntityFramework.SqlServer.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\PagedList.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\PagedList.Mvc.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\System.Web.Helpers.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\System.Web.Mvc.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\System.Web.Optimization.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\System.Web.Razor.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\System.Web.WebPages.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\System.Web.WebPages.Deployment.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\System.Web.WebPages.Razor.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\Antlr3.Runtime.pdb
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\Newtonsoft.Json.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\Microsoft.ApplicationInsights.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.DependencyCollector.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.WindowsServer.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\bin\Microsoft.AI.Web.xml
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\obj\Debug\MVCStudentManager.csproj.CoreCompileInputs.cache
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\obj\Debug\MVCStudentManager.csproj.CopyComplete
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\obj\Debug\MVCStudentManager.dll
+D:\Study\Nam 3\HK2\CNPM_NC\Thuc Hanh\Quan Ly Hoc SInh (Code&SQL)\MVCStudentManager-V0.0.2\MVCStudentManager\MVCStudentManager\obj\Debug\MVCStudentManager.pdb
