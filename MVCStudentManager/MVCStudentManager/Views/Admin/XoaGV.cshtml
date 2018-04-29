@@ -1,0 +1,57 @@
+﻿@model MVCStudentManager.Models.GiaoVien
+
+@{
+    ViewBag.Title = "XoaGV";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2 style="text-align:center">XÁC NHẬN XÓA GIÁO VIÊN</h2>
+
+<h3 style="text-align:center">Bạn có muốn xóa giáo viên?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        @*Tên giáo viên*@
+        <dt>
+            Tên giáo viên :
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TenGiaoVien)
+        </dd>
+        @*Địa chỉ*@
+        <dt>
+            Địa chỉ
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DiaChi)
+        </dd>
+        @*Điện thoại*@
+        <dt>
+            Điện thoại
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DienThoai)
+        </dd>
+        @*Môn học*@
+        <dt>
+            Môn học :
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MonHoc.TenMon)
+        </dd>
+        @*Button*@
+        <dd>
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    <input type="submit" value="Xóa" class="btn btn-default" /> |
+                    <button>
+                        @Html.ActionLink("Trở về", "Teacher")
+                    </button>
+                </div>
+            }
+        </dd>
+    </dl>
+</div>

@@ -1,0 +1,46 @@
+﻿@model IEnumerable<MVCStudentManager.Models.Lop>
+@{
+    ViewBag.Title = "Class";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2 style="text-align:center">Danh sách lớp</h2>
+
+<button>
+    @Html.ActionLink("Thêm mới", "ThemLop")
+</button>
+<table class="table">
+    <tr>
+        <th style="width:200px">Khối</th>
+        <th style="width:200px">Năm học</th>
+        <th style="width:100px">Lớp</th>
+        <th style="width:200px">Giáo viên</th>
+        <th style="width:200px">Sỉ số</th>
+        <th style="width:200px"> </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Khoi.TenKhoi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NamHoc.TenNamHoc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenLop)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GiaoVien.TenGiaoVien)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SiSo)
+            </td>
+            <td>
+                @Html.ActionLink("Sửa", "SuaLop", new { id = item.MaLop }) |
+                @Html.ActionLink("Xóa", "XoaLop", new { id = item.MaLop })
+            </td>
+        </tr>
+    }
+</table>
