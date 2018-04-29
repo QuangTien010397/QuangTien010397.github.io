@@ -6,6 +6,14 @@
 }
 
 <h2 style="text-align:center">Danh sách giáo viên</h2>
+@using (Html.BeginForm("Index", "HocSinh", FormMethod.Get, new { @class = "navbar-form navbar-right", role = "search", id = "search-form", onsubmit = "return empty();" }))
+{
+    <p style="text-align:center">
+        Tìm : @Html.TextBox("SearchString")
+        <input type="submit" value="Tìm kiếm" />
+    </p>
+}
+<br>
 <button>
     @Html.ActionLink("Thêm mới", "ThemGV")
 </button>

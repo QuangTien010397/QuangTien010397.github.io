@@ -8,16 +8,21 @@ using PagedList;
 using PagedList.Mvc;
 using System.IO;
 
-
 namespace MVCStudentManager.Controllers
 {
     public class HocSinhController : Controller
     {
         dbStudentManagerDataContext db = new dbStudentManagerDataContext();
         // GET: HocSinh
-        public ActionResult Index()
-        {
-            return View();
+        public ActionResult Index(string searchString)
+        {          
+            var hocsinh = from e in db.HocSinhs select e;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                hocsinh = hocsinh.Where(s => s.HoTen.Contains(searchString));
+            }
+            ViewBag.SeachString = searchString;
+            return View(hocsinh.ToList());
         }
     }
 }

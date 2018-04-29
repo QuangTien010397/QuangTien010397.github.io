@@ -19,32 +19,50 @@ namespace MVCStudentManager.Controllers
             return View();
         }
         //Trang quản lí học sinh
-        public ActionResult Student(int? page)
+        public ActionResult Student(int? page, string searchString)
         {
+            var hocsinh = from e in db.HocSinhs select e;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                hocsinh = hocsinh.Where(s => s.HoTen.Contains(searchString));
+            }
+            ViewBag.SeachString = searchString;
             int pageNumber = (page ?? 1);
             int pageSize = 7;
-            return View(db.HocSinhs.ToList().OrderBy(n => n.MaHS).ToPagedList(pageNumber, pageSize));
+            return View(hocsinh.ToList().OrderBy(n => n.MaHS).ToPagedList(pageNumber, pageSize));
         }
         //Trang điểm
-        public ActionResult Mark(int? page)
+        public ActionResult Mark(int? page, string searchString)
         {
             int pageNumber = (page ?? 1);
             int pageSize = 7;
             return View(db.DiemMons.ToList().OrderBy(n => n.MaDiemMon).ToPagedList(pageNumber, pageSize));
         }
         //Trang lớp
-        public ActionResult Class(int? page)
+        public ActionResult Class(int? page, string searchString)
         {
+            var lop = from e in db.Lops select e;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                lop = lop.Where(s => s.TenLop.Contains(searchString));
+            }
+            ViewBag.SeachString = searchString;
             int pageNumber = (page ?? 1);
             int pageSize = 7;
-            return View(db.Lops.ToList().OrderBy(n => n.MaLop).ToPagedList(pageNumber, pageSize));
+            return View(lop.ToList().OrderBy(n => n.MaLop).ToPagedList(pageNumber, pageSize));
         }
         //Trang giáo viên
-        public ActionResult Teacher(int ? page)
+        public ActionResult Teacher(int ? page, string searchString)
         {
+            var giaovien = from e in db.GiaoViens select e;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                giaovien = giaovien.Where(s => s.TenGiaoVien.Contains(searchString));
+            }
+            ViewBag.SeachString = searchString;
             int pageNumber = (page ?? 1);
             int pageSize = 7;
-            return View(db.GiaoViens.ToList().OrderBy(n => n.MaGiaoVien).ToPagedList(pageNumber, pageSize));
+            return View(giaovien.ToList().OrderBy(n => n.MaGiaoVien).ToPagedList(pageNumber, pageSize));
         }
 
         //Trang đăng nhập

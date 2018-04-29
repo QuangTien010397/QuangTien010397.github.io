@@ -1,10 +1,64 @@
-﻿
+﻿@model IEnumerable<MVCStudentManager.Models.HocSinh>
+
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutUser.cshtml";
 }
-<button style="float:right">@Html.ActionLink("Đăng nhập", "LoginHS", "User")</button>
+
+<button style="float:right">@Html.ActionLink("Đăng nhập", "LoginGV", "User")</button>
 <br>
-<h2 style="text-align:center">XIN CHÀO HỌC SINH</h2>
+<h2 style="text-align:center">XIN CHÀO GIÁO VIÊN</h2>
 
+@using (Html.BeginForm("Index", "HocSinh", FormMethod.Get, new { @class = "navbar-form navbar-right", role = "search", id = "search-form", onsubmit = "return empty();" }))
+{
+    <p style="text-align:center">
+        Tìm : @Html.TextBox("SearchString")
+        <input type="submit" value="Tìm kiếm" />
+    </p>
+}
 
+<table class="table">
+    <tr>
+        <th style="width:200px">Họ tên</th>
+        <th style="width:200px">Ngày sinh</th>
+        <th style="width:100px">Giới tính</th>
+        <th style="width:200px">Email</th>
+        <th style="width:200px">Địa chỉ</th>
+        <th style="width:200px">Tên lớp</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.HoTen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgaySinh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GioiTinh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiaChi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lop.TenLop)
+            </td>
+        </tr>
+    }
+</table>
+@*@section Scripts
+    {
+        <script>
+            function empty() {
+                var x = $('#search-box').val();
+                if (x == "" || x == null) {
+                    return false;
+                }
+            }
+        </script>
+    }*@
