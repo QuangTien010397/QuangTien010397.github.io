@@ -33,6 +33,9 @@ namespace MVCStudentManager.Models
     partial void InsertAdmin(Admin instance);
     partial void UpdateAdmin(Admin instance);
     partial void DeleteAdmin(Admin instance);
+    partial void InsertThamSo(ThamSo instance);
+    partial void UpdateThamSo(ThamSo instance);
+    partial void DeleteThamSo(ThamSo instance);
     partial void InsertDiemMon(DiemMon instance);
     partial void UpdateDiemMon(DiemMon instance);
     partial void DeleteDiemMon(DiemMon instance);
@@ -57,13 +60,10 @@ namespace MVCStudentManager.Models
     partial void InsertNamHoc(NamHoc instance);
     partial void UpdateNamHoc(NamHoc instance);
     partial void DeleteNamHoc(NamHoc instance);
-    partial void InsertThamSo(ThamSo instance);
-    partial void UpdateThamSo(ThamSo instance);
-    partial void DeleteThamSo(ThamSo instance);
     #endregion
 		
 		public dbStudentManagerDataContext() : 
-				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["QLHocSinhConnectionString1"].ConnectionString, mappingSource)
+				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["QLHocSinhConnectionString"].ConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -97,6 +97,14 @@ namespace MVCStudentManager.Models
 			get
 			{
 				return this.GetTable<Admin>();
+			}
+		}
+		
+		public System.Data.Linq.Table<ThamSo> ThamSos
+		{
+			get
+			{
+				return this.GetTable<ThamSo>();
 			}
 		}
 		
@@ -161,14 +169,6 @@ namespace MVCStudentManager.Models
 			get
 			{
 				return this.GetTable<NamHoc>();
-			}
-		}
-		
-		public System.Data.Linq.Table<ThamSo> ThamSos
-		{
-			get
-			{
-				return this.GetTable<ThamSo>();
 			}
 		}
 	}
@@ -258,6 +258,116 @@ namespace MVCStudentManager.Models
 					this._HoTen = value;
 					this.SendPropertyChanged("HoTen");
 					this.OnHoTenChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ThamSo")]
+	public partial class ThamSo : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _MaThamSo;
+		
+		private string _TenThamSo;
+		
+		private string _Ghichu;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnMaThamSoChanging(int value);
+    partial void OnMaThamSoChanged();
+    partial void OnTenThamSoChanging(string value);
+    partial void OnTenThamSoChanged();
+    partial void OnGhichuChanging(string value);
+    partial void OnGhichuChanged();
+    #endregion
+		
+		public ThamSo()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaThamSo", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int MaThamSo
+		{
+			get
+			{
+				return this._MaThamSo;
+			}
+			set
+			{
+				if ((this._MaThamSo != value))
+				{
+					this.OnMaThamSoChanging(value);
+					this.SendPropertyChanging();
+					this._MaThamSo = value;
+					this.SendPropertyChanged("MaThamSo");
+					this.OnMaThamSoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenThamSo", DbType="NVarChar(MAX)")]
+		public string TenThamSo
+		{
+			get
+			{
+				return this._TenThamSo;
+			}
+			set
+			{
+				if ((this._TenThamSo != value))
+				{
+					this.OnTenThamSoChanging(value);
+					this.SendPropertyChanging();
+					this._TenThamSo = value;
+					this.SendPropertyChanged("TenThamSo");
+					this.OnTenThamSoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ghichu", DbType="NVarChar(50)")]
+		public string Ghichu
+		{
+			get
+			{
+				return this._Ghichu;
+			}
+			set
+			{
+				if ((this._Ghichu != value))
+				{
+					this.OnGhichuChanging(value);
+					this.SendPropertyChanging();
+					this._Ghichu = value;
+					this.SendPropertyChanged("Ghichu");
+					this.OnGhichuChanged();
 				}
 			}
 		}
@@ -650,6 +760,10 @@ namespace MVCStudentManager.Models
 		
 		private string _DienThoai;
 		
+		private string _IDLogin;
+		
+		private string _Pass;
+		
 		private System.Nullable<int> _MaMon;
 		
 		private EntitySet<Lop> _Lops;
@@ -668,6 +782,10 @@ namespace MVCStudentManager.Models
     partial void OnDiaChiChanged();
     partial void OnDienThoaiChanging(string value);
     partial void OnDienThoaiChanged();
+    partial void OnIDLoginChanging(string value);
+    partial void OnIDLoginChanged();
+    partial void OnPassChanging(string value);
+    partial void OnPassChanged();
     partial void OnMaMonChanging(System.Nullable<int> value);
     partial void OnMaMonChanged();
     #endregion
@@ -755,6 +873,46 @@ namespace MVCStudentManager.Models
 					this._DienThoai = value;
 					this.SendPropertyChanged("DienThoai");
 					this.OnDienThoaiChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IDLogin", DbType="VarChar(50)")]
+		public string IDLogin
+		{
+			get
+			{
+				return this._IDLogin;
+			}
+			set
+			{
+				if ((this._IDLogin != value))
+				{
+					this.OnIDLoginChanging(value);
+					this.SendPropertyChanging();
+					this._IDLogin = value;
+					this.SendPropertyChanged("IDLogin");
+					this.OnIDLoginChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Pass", DbType="VarChar(50)")]
+		public string Pass
+		{
+			get
+			{
+				return this._Pass;
+			}
+			set
+			{
+				if ((this._Pass != value))
+				{
+					this.OnPassChanging(value);
+					this.SendPropertyChanging();
+					this._Pass = value;
+					this.SendPropertyChanged("Pass");
+					this.OnPassChanged();
 				}
 			}
 		}
@@ -995,6 +1153,10 @@ namespace MVCStudentManager.Models
 		
 		private string _DiaChi;
 		
+		private string _IDLogin;
+		
+		private string _Pass;
+		
 		private System.Nullable<int> _MaLop;
 		
 		private EntitySet<DiemMon> _DiemMons;
@@ -1017,6 +1179,10 @@ namespace MVCStudentManager.Models
     partial void OnEmailChanged();
     partial void OnDiaChiChanging(string value);
     partial void OnDiaChiChanged();
+    partial void OnIDLoginChanging(string value);
+    partial void OnIDLoginChanged();
+    partial void OnPassChanging(string value);
+    partial void OnPassChanged();
     partial void OnMaLopChanging(System.Nullable<int> value);
     partial void OnMaLopChanged();
     #endregion
@@ -1144,6 +1310,46 @@ namespace MVCStudentManager.Models
 					this._DiaChi = value;
 					this.SendPropertyChanged("DiaChi");
 					this.OnDiaChiChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IDLogin", DbType="VarChar(50)")]
+		public string IDLogin
+		{
+			get
+			{
+				return this._IDLogin;
+			}
+			set
+			{
+				if ((this._IDLogin != value))
+				{
+					this.OnIDLoginChanging(value);
+					this.SendPropertyChanging();
+					this._IDLogin = value;
+					this.SendPropertyChanged("IDLogin");
+					this.OnIDLoginChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Pass", DbType="VarChar(50)")]
+		public string Pass
+		{
+			get
+			{
+				return this._Pass;
+			}
+			set
+			{
+				if ((this._Pass != value))
+				{
+					this.OnPassChanging(value);
+					this.SendPropertyChanging();
+					this._Pass = value;
+					this.SendPropertyChanged("Pass");
+					this.OnPassChanged();
 				}
 			}
 		}
@@ -1952,116 +2158,6 @@ namespace MVCStudentManager.Models
 		{
 			this.SendPropertyChanging();
 			entity.NamHoc = null;
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ThamSo")]
-	public partial class ThamSo : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _MaThamSo;
-		
-		private string _TenThamSo;
-		
-		private string _Ghichu;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnMaThamSoChanging(int value);
-    partial void OnMaThamSoChanged();
-    partial void OnTenThamSoChanging(string value);
-    partial void OnTenThamSoChanged();
-    partial void OnGhichuChanging(string value);
-    partial void OnGhichuChanged();
-    #endregion
-		
-		public ThamSo()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaThamSo", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int MaThamSo
-		{
-			get
-			{
-				return this._MaThamSo;
-			}
-			set
-			{
-				if ((this._MaThamSo != value))
-				{
-					this.OnMaThamSoChanging(value);
-					this.SendPropertyChanging();
-					this._MaThamSo = value;
-					this.SendPropertyChanged("MaThamSo");
-					this.OnMaThamSoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenThamSo", DbType="NVarChar(MAX)")]
-		public string TenThamSo
-		{
-			get
-			{
-				return this._TenThamSo;
-			}
-			set
-			{
-				if ((this._TenThamSo != value))
-				{
-					this.OnTenThamSoChanging(value);
-					this.SendPropertyChanging();
-					this._TenThamSo = value;
-					this.SendPropertyChanged("TenThamSo");
-					this.OnTenThamSoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ghichu", DbType="NVarChar(50)")]
-		public string Ghichu
-		{
-			get
-			{
-				return this._Ghichu;
-			}
-			set
-			{
-				if ((this._Ghichu != value))
-				{
-					this.OnGhichuChanging(value);
-					this.SendPropertyChanging();
-					this._Ghichu = value;
-					this.SendPropertyChanged("Ghichu");
-					this.OnGhichuChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
 		}
 	}
 }
