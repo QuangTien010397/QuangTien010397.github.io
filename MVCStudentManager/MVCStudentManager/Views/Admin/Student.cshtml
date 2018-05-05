@@ -1,0 +1,73 @@
+﻿@using MVCStudentManager.Models
+@using PagedList.Mvc;
+@model PagedList.PagedList<MVCStudentManager.Models.HocSinh>
+
+@helper Truncate(string input, int length)
+    {
+        if (input.Length < length)
+        {
+            @input
+        }
+        else
+        {
+            @input.Substring(0, length)<text>...</text>
+        }
+}
+
+@{
+    ViewBag.Title = "Student";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2 style="text-align:center">Danh sách học sinh</h2>
+
+<button>@Html.ActionLink("Thêm mới", "ThemHS")</button>
+
+<table class="table">
+    <tr>
+        <th style="width:200px">Họ tên</th>
+        <th style="width:200px">Ngày sinh</th>
+        <th style="width:100px">Giới tính</th>
+        <th style="width:200px">Email</th>
+        <th style="width:200px">Địa chỉ</th>
+        <th style="width:200px">Tên lớp</th>
+        <th style="width:200px"> </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.HoTen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgaySinh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GioiTinh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DiaChi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lop.TenLop)
+        </td>
+        <td>
+            @Html.ActionLink("Sửa", "SuaHS", new { id = item.MaHS }) |
+            @Html.ActionLink("Xóa", "XoaHS", new { id = item.MaHS })
+        </td>
+    </tr>
+    }
+</table>
+
+Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+<div class="MenuTrang">
+    @Html.PagedListPager(Model, page => Url.Action("Student", new { page = page }))
+</div>
+<style>
+    .MenuTrang li {
+        display: inline;
+    }
+</style>
