@@ -1,0 +1,51 @@
+﻿@model IEnumerable<MVCStudentManager.Models.GiaoVien>
+
+@{
+    ViewBag.Title = "Teacher";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2 style="text-align:center">Danh sách giáo viên</h2>
+@using (Html.BeginForm("Index", "HocSinh", FormMethod.Get, new { @class = "navbar-form navbar-right", role = "search", id = "search-form", onsubmit = "return empty();" }))
+{
+    <p style="text-align:center">
+        Tìm : @Html.TextBox("SearchString")
+        <input type="submit" value="Tìm kiếm" />
+    </p>
+}
+<br>
+<button>
+    @Html.ActionLink("Thêm mới", "ThemGV")
+</button>
+<table class="table">
+    <tr>
+        <th style="width:200px">Tên giáo viên</th>
+        <th style="width:200px">Địa chỉ</th>
+        <th style="width:100px">Điện thoại</th>
+        <th style="width:200px">Môn học</th>
+        <th style="width:200px"> </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenGiaoVien)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiaChi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DienThoai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MonHoc.TenMon)
+            </td>
+            <td>
+                @Html.ActionLink("Sửa", "SuaGV", new { id = item.MaGiaoVien }) |
+                @Html.ActionLink("Xóa", "XoaGV", new { id = item.MaGiaoVien })
+            </td>
+        </tr>
+    }
+
+</table>
