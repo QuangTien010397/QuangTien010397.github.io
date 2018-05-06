@@ -1,0 +1,112 @@
+﻿@using MVCStudentManager.Models
+@using PagedList.Mvc;
+@model PagedList.PagedList<MVCStudentManager.Models.Lop>
+@{
+    /**/
+
+    /**/
+
+    ViewBag.Title = "Class";
+    Layout = "~/Views/Shared/_LayoutHS.cshtml";
+}
+
+<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!-- search form (Optional) -->
+        <h4 style="text-align:center; color:whitesmoke; font-weight:bold">Tìm theo tên</h4>
+        <form action="#" method="get" class="sidebar-form">
+
+            <div class="input-group">
+                @using (Html.BeginForm("Class", "HocSinh", FormMethod.Get, new { @class = "navbar-form navbar-right", role = "search", id = "search-form", onsubmit = "return empty();" }))
+                {
+                    @*<input type="text" name="q" class="form-control" placeholder="Search...">*@
+                    <input type="text" id="SearchString" name="SearchString" value="" style="width: 170px;" class="form-control" placeholder="Search...">
+                    @*@Html.TextBox("SearchString")*@
+                    <span class="input-group-btn">
+                        <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>
+                    @*<p style="text-align:center">
+                            @Html.TextBox("SearchString")
+                        </p>
+                        <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                            <i class="fa fa-search"></i>
+                        </button>*@
+                }
+            </div>
+        </form>
+        <!-- /.search form -->
+        <!-- Sidebar Menu -->
+        <ul class="sidebar-menu" data-widget="tree">
+            <li class="header" style="text-align:center">
+                <h4 style="color:whitesmoke;font-weight:bold">MENU</h4>
+            </li>
+            <!-- Optionally, you can add icons to the links -->
+            <li>
+                <a href="@Url.Action("Student","HocSinh")">
+                    <i class="fa fa-link"></i>
+                    <span>Xem danh sách học sinh</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Class","HocSinh")">
+                    <i class="fa fa-link"></i>
+                    <span>Xem danh sách lớp</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Mark","HocSinh")">
+                    <i class="fa fa-link"></i>
+                    <span>Xem điểm</span>
+                </a>
+            </li>
+        </ul>
+        <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+</aside>
+
+<br>
+<h1 style="text-align:center;font-weight:bold">Danh sách lớp</h1>
+
+<table class="table">
+    <tr>
+        <th style="width:100px">Lớp</th>
+        <th style="width:200px">Khối</th>
+        <th style="width:200px">Năm học</th>
+        <th style="width:200px">Giáo viên</th>
+        <th style="width:200px">Sỉ số</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenLop)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Khoi.TenKhoi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NamHoc.TenNamHoc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GiaoVien.TenGiaoVien)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SiSo)
+            </td>
+        </tr>
+    }
+</table>
+Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+<div class="MenuTrang">
+    @Html.PagedListPager(Model, page => Url.Action("Class", new { page = page }))
+</div>
+<style>
+    .MenuTrang li {
+        display: inline;
+    }
+</style>
