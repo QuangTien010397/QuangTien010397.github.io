@@ -19,6 +19,11 @@ namespace MVCStudentManager.Controllers
             return View();
         }
 
+        public ActionResult ThongBao()
+        {
+            return View();
+        }
+
         //Trang đăng nhập cho học sinh
         [HttpGet]
         public ActionResult LoginHS()

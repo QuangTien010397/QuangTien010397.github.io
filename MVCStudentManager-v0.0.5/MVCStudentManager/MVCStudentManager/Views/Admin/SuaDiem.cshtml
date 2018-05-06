@@ -19,21 +19,21 @@
         <div class="form-group">
             @Html.LabelFor(model => model.HocSinh.HoTen, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("MaHS")
+                @Model.HocSinh.HoTen
             </div>
         </div>
         @*Mã Môn*@
         <div class="form-group">
             @Html.LabelFor(model => model.MonHoc.TenMon, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("MaMon")
+                @Model.MonHoc.TenMon
             </div>
         </div>
         @*Mã học kỳ*@
         <div class="form-group">
             @Html.LabelFor(model => model.HocKy.TenHocKy, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("MaHocKy")
+                @Model.HocKy.TenHocKy
             </div>
         </div>
         @*Điểm 15 phút*@
@@ -58,14 +58,6 @@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.DiemHK, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.DiemHK, "", new { @class = "text-danger" })
-            </div>
-        </div>
-        @*Điểm trung bình*@
-        <div class="form-group">
-            @Html.LabelFor(model => model.DiemTB, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.DiemTB, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.DiemTB, "", new { @class = "text-danger" })
             </div>
         </div>
         @*Button*@

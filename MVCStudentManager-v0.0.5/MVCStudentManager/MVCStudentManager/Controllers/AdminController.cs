@@ -279,7 +279,6 @@ namespace MVCStudentManager.Controllers
                 lop.MaNamHoc = LOP.MaNamHoc;
                 lop.TenLop = LOP.TenLop;
                 lop.MaGiaoVien = LOP.MaGiaoVien;
-                lop.SiSo = LOP.SiSo;
                 db.SubmitChanges();
             }
             return RedirectToAction("Class");
@@ -336,7 +335,7 @@ namespace MVCStudentManager.Controllers
             }
             db.DiemMons.DeleteOnSubmit(diem);
             db.SubmitChanges();
-            return RedirectToAction("Class");
+            return RedirectToAction("Mark");
         }
         //Sửa
         [HttpGet]
@@ -368,7 +367,7 @@ namespace MVCStudentManager.Controllers
                 diem.Diem15phut = DIEM.Diem15phut;
                 diem.Diem1Tiet = DIEM.Diem1Tiet;
                 diem.DiemHK = DIEM.DiemHK;
-                diem.DiemTB = DIEM.DiemTB;
+                diem.DiemTB = (DIEM.Diem15phut + DIEM.Diem1Tiet + DIEM.DiemHK)/3;
                 db.SubmitChanges();
             }
             return RedirectToAction("Mark");

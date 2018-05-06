@@ -7,6 +7,7 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
+<br>
 <h2 style="text-align:center">Danh sách Điểm</h2>
 @using (Html.BeginForm("Index", "HocSinh", FormMethod.Get, new { @class = "navbar-form navbar-right", role = "search", id = "search-form", onsubmit = "return empty();" }))
 {
@@ -25,9 +26,9 @@
         <th style="width:200px">Học sinh</th>
         <th style="width:200px">Môn học</th>
         <th style="width:200px">Điểm 15 phút</th>
-        <th style="width:200px">Điểm 1 tiết</th>
-        <th style="width:200px">Điểm 1 học kỳ</th>
-        <th style="width:200px">Điểm trung bình</th>
+        <th style="width:100px">Điểm 1 tiết</th>
+        <th style="width:100px">Điểm học kỳ</th>
+        <th style="width:100px">Điểm trung bình</th>
         <th></th>
     </tr>
 

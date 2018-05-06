@@ -1,10 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLHocSinh" Class="dbStudentManagerDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-G8L31P5\SA;Initial Catalog=QLHocSinh;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="QLHocSinhConnectionString1" Provider="System.Data.SqlClient" />
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-O2938GT\SQLEXPRESS;Initial Catalog=QLHocSinh;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="QLHocSinhConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Admin" Member="Admins">
     <Type Name="Admin">
       <Column Name="UserAdmin" Type="System.String" DbType="VarChar(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="PassAdmin" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
       <Column Name="HoTen" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ThamSo" Member="ThamSos">
+    <Type Name="ThamSo">
+      <Column Name="MaThamSo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenThamSo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Ghichu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.DiemMon" Member="DiemMons">
@@ -22,7 +29,6 @@
       <Association Name="MonHoc_DiemMon" Member="MonHoc" ThisKey="MaMon" OtherKey="MaMon" Type="MonHoc" IsForeignKey="true" />
     </Type>
     <InsertFunction FunctionId="FunctionId1">
-      <Argument Parameter="maDiemMon" Member="MaDiemMon" />
       <Argument Parameter="maHS" Member="MaHS" />
       <Argument Parameter="maMon" Member="MaMon" />
       <Argument Parameter="maHocKy" Member="MaHocKy" />
@@ -117,13 +123,6 @@
       <Association Name="NamHoc_Lop" Member="Lops" ThisKey="MaNamHoc" OtherKey="MaNamHoc" Type="Lop" />
     </Type>
   </Table>
-  <Table Name="dbo.ThamSo" Member="ThamSos">
-    <Type Name="ThamSo">
-      <Column Name="MaThamSo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="TenThamSo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="Ghichu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-    </Type>
-  </Table>
   <Function Id="FunctionId2" Name="dbo.sp_NhapHS" Method="sp_NhapHS">
     <Parameter Name="MaHS" Parameter="maHS" Type="System.Int32" DbType="Int" />
     <Parameter Name="HoTen" Parameter="hoTen" Type="System.String" DbType="NVarChar(50)" />
@@ -142,7 +141,6 @@
     <Return Type="System.Int32" />
   </Function>
   <Function Id="FunctionId1" Name="dbo.sp_ThemDiemMon" Method="sp_ThemDiemMon">
-    <Parameter Name="MaDiemMon" Parameter="maDiemMon" Type="System.Int32" DbType="Int" />
     <Parameter Name="MaHS" Parameter="maHS" Type="System.Int32" DbType="Int" />
     <Parameter Name="MaMon" Parameter="maMon" Type="System.Int32" DbType="Int" />
     <Parameter Name="MaHocKy" Parameter="maHocKy" Type="System.Int32" DbType="Int" />

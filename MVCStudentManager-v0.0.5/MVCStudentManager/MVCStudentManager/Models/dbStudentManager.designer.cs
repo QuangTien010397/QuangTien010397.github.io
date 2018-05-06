@@ -33,6 +33,9 @@ namespace MVCStudentManager.Models
     partial void InsertAdmin(Admin instance);
     partial void UpdateAdmin(Admin instance);
     partial void DeleteAdmin(Admin instance);
+    partial void InsertThamSo(ThamSo instance);
+    partial void UpdateThamSo(ThamSo instance);
+    partial void DeleteThamSo(ThamSo instance);
     partial void UpdateDiemMon(DiemMon instance);
     partial void DeleteDiemMon(DiemMon instance);
     partial void InsertGiaoVien(GiaoVien instance);
@@ -54,13 +57,10 @@ namespace MVCStudentManager.Models
     partial void InsertNamHoc(NamHoc instance);
     partial void UpdateNamHoc(NamHoc instance);
     partial void DeleteNamHoc(NamHoc instance);
-    partial void InsertThamSo(ThamSo instance);
-    partial void UpdateThamSo(ThamSo instance);
-    partial void DeleteThamSo(ThamSo instance);
     #endregion
 		
 		public dbStudentManagerDataContext() : 
-				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["QLHocSinhConnectionString1"].ConnectionString, mappingSource)
+				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["QLHocSinhConnectionString"].ConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -94,6 +94,14 @@ namespace MVCStudentManager.Models
 			get
 			{
 				return this.GetTable<Admin>();
+			}
+		}
+		
+		public System.Data.Linq.Table<ThamSo> ThamSos
+		{
+			get
+			{
+				return this.GetTable<ThamSo>();
 			}
 		}
 		
@@ -161,17 +169,9 @@ namespace MVCStudentManager.Models
 			}
 		}
 		
-		public System.Data.Linq.Table<ThamSo> ThamSos
-		{
-			get
-			{
-				return this.GetTable<ThamSo>();
-			}
-		}
-		
 		private void InsertDiemMon(DiemMon obj)
 		{
-			this.sp_ThemDiemMon(((System.Nullable<int>)(obj.MaDiemMon)), ((System.Nullable<int>)(obj.MaHS)), ((System.Nullable<int>)(obj.MaMon)), ((System.Nullable<int>)(obj.MaHocKy)), ((System.Nullable<double>)(obj.Diem15phut)), ((System.Nullable<double>)(obj.Diem1Tiet)), ((System.Nullable<double>)(obj.DiemHK)));
+			this.sp_ThemDiemMon(((System.Nullable<int>)(obj.MaHS)), ((System.Nullable<int>)(obj.MaMon)), ((System.Nullable<int>)(obj.MaHocKy)), ((System.Nullable<double>)(obj.Diem15phut)), ((System.Nullable<double>)(obj.Diem1Tiet)), ((System.Nullable<double>)(obj.DiemHK)));
 		}
 		
 		private void InsertHocSinh(HocSinh obj)
@@ -199,9 +199,9 @@ namespace MVCStudentManager.Models
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_ThemDiemMon")]
-		public int sp_ThemDiemMon([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MaDiemMon", DbType="Int")] System.Nullable<int> maDiemMon, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="MaHS", DbType="Int")] System.Nullable<int> maHS, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="MaMon", DbType="Int")] System.Nullable<int> maMon, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="MaHocKy", DbType="Int")] System.Nullable<int> maHocKy, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Diem15phut", DbType="Float")] System.Nullable<double> diem15phut, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Diem1Tiet", DbType="Float")] System.Nullable<double> diem1Tiet, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DiemHK", DbType="Float")] System.Nullable<double> diemHK)
+		public int sp_ThemDiemMon([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MaHS", DbType="Int")] System.Nullable<int> maHS, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="MaMon", DbType="Int")] System.Nullable<int> maMon, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="MaHocKy", DbType="Int")] System.Nullable<int> maHocKy, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Diem15phut", DbType="Float")] System.Nullable<double> diem15phut, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Diem1Tiet", DbType="Float")] System.Nullable<double> diem1Tiet, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DiemHK", DbType="Float")] System.Nullable<double> diemHK)
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), maDiemMon, maHS, maMon, maHocKy, diem15phut, diem1Tiet, diemHK);
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), maHS, maMon, maHocKy, diem15phut, diem1Tiet, diemHK);
 			return ((int)(result.ReturnValue));
 		}
 	}
@@ -291,6 +291,116 @@ namespace MVCStudentManager.Models
 					this._HoTen = value;
 					this.SendPropertyChanged("HoTen");
 					this.OnHoTenChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ThamSo")]
+	public partial class ThamSo : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _MaThamSo;
+		
+		private string _TenThamSo;
+		
+		private string _Ghichu;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnMaThamSoChanging(int value);
+    partial void OnMaThamSoChanged();
+    partial void OnTenThamSoChanging(string value);
+    partial void OnTenThamSoChanged();
+    partial void OnGhichuChanging(string value);
+    partial void OnGhichuChanged();
+    #endregion
+		
+		public ThamSo()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaThamSo", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int MaThamSo
+		{
+			get
+			{
+				return this._MaThamSo;
+			}
+			set
+			{
+				if ((this._MaThamSo != value))
+				{
+					this.OnMaThamSoChanging(value);
+					this.SendPropertyChanging();
+					this._MaThamSo = value;
+					this.SendPropertyChanged("MaThamSo");
+					this.OnMaThamSoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenThamSo", DbType="NVarChar(MAX)")]
+		public string TenThamSo
+		{
+			get
+			{
+				return this._TenThamSo;
+			}
+			set
+			{
+				if ((this._TenThamSo != value))
+				{
+					this.OnTenThamSoChanging(value);
+					this.SendPropertyChanging();
+					this._TenThamSo = value;
+					this.SendPropertyChanged("TenThamSo");
+					this.OnTenThamSoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ghichu", DbType="NVarChar(50)")]
+		public string Ghichu
+		{
+			get
+			{
+				return this._Ghichu;
+			}
+			set
+			{
+				if ((this._Ghichu != value))
+				{
+					this.OnGhichuChanging(value);
+					this.SendPropertyChanging();
+					this._Ghichu = value;
+					this.SendPropertyChanged("Ghichu");
+					this.OnGhichuChanged();
 				}
 			}
 		}
@@ -2081,116 +2191,6 @@ namespace MVCStudentManager.Models
 		{
 			this.SendPropertyChanging();
 			entity.NamHoc = null;
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ThamSo")]
-	public partial class ThamSo : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _MaThamSo;
-		
-		private string _TenThamSo;
-		
-		private string _Ghichu;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnMaThamSoChanging(int value);
-    partial void OnMaThamSoChanged();
-    partial void OnTenThamSoChanging(string value);
-    partial void OnTenThamSoChanged();
-    partial void OnGhichuChanging(string value);
-    partial void OnGhichuChanged();
-    #endregion
-		
-		public ThamSo()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaThamSo", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int MaThamSo
-		{
-			get
-			{
-				return this._MaThamSo;
-			}
-			set
-			{
-				if ((this._MaThamSo != value))
-				{
-					this.OnMaThamSoChanging(value);
-					this.SendPropertyChanging();
-					this._MaThamSo = value;
-					this.SendPropertyChanged("MaThamSo");
-					this.OnMaThamSoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenThamSo", DbType="NVarChar(MAX)")]
-		public string TenThamSo
-		{
-			get
-			{
-				return this._TenThamSo;
-			}
-			set
-			{
-				if ((this._TenThamSo != value))
-				{
-					this.OnTenThamSoChanging(value);
-					this.SendPropertyChanging();
-					this._TenThamSo = value;
-					this.SendPropertyChanged("TenThamSo");
-					this.OnTenThamSoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ghichu", DbType="NVarChar(50)")]
-		public string Ghichu
-		{
-			get
-			{
-				return this._Ghichu;
-			}
-			set
-			{
-				if ((this._Ghichu != value))
-				{
-					this.OnGhichuChanging(value);
-					this.SendPropertyChanging();
-					this._Ghichu = value;
-					this.SendPropertyChanged("Ghichu");
-					this.OnGhichuChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
 		}
 	}
 }
