@@ -1,0 +1,62 @@
+﻿@model MVCStudentManager.Models.Lop
+
+@{
+    ViewBag.Title = "XoaLop";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<br>
+<h2 style="text-align:center; font-weight:bold">XÁC NHẬN XÓA LỚP</h2>
+
+<h3 style="text-align:center">Bạn có muốn xóa lớp này ?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        @*Mã khối*@
+        <dt>
+            Khối :
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Khoi.TenKhoi)
+        </dd>
+        @*Mã năm học*@
+        <dt>
+            Năm học :
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NamHoc.TenNamHoc)
+        </dd>
+        @*Tên lớp*@
+        <dt>
+            Tên lớp :
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TenLop)
+        </dd>
+        @*Mã giáo viên*@
+        <dt>
+            Giáo viên :
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GiaoVien.TenGiaoVien)
+        </dd>
+        @*Sỉ số*@
+        <dt>
+            Sỉ số :
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SiSo)
+        </dd>
+        @*Button*@
+        <dd>
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    <input type="submit" value="Xóa" class="btn btn-default" /> |
+                    <button>@Html.ActionLink("Trở về", "Class")</button>
+                </div>
+            }
+        </dd>
+</div>
