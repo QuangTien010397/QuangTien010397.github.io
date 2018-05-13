@@ -1,0 +1,153 @@
+﻿@model MVCStudentManager.Models.DiemMon
+
+@{
+    /**/
+
+    ViewBag.Title = "ThemDiem";
+    Layout = "~/Views/Shared/_LayoutGV.cshtml";
+}
+
+<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!-- search form (Optional) -->
+        <h4 style="text-align:center; color:whitesmoke; font-weight:bold">Tìm theo tên</h4>
+        <form action="#" method="get" class="sidebar-form">
+            <div class="input-group">
+                @using (Html.BeginForm("", "", FormMethod.Get, new { @class = "navbar-form navbar-right", role = "search", id = "search-form", onsubmit = "return empty();" }))
+                {
+                    @*<input type="text" name="q" class="form-control" placeholder="Search...">*@
+                    <input type="text" id="SearchString" name="SearchString" value="" style="width: 170px;" class="form-control" placeholder="Search...">
+                    @*@Html.TextBox("SearchString")*@
+                    <span class="input-group-btn">
+                        <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>
+                    @*<p style="text-align:center">
+                            @Html.TextBox("SearchString")
+                        </p>
+                        <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                            <i class="fa fa-search"></i>
+                        </button>*@
+                }
+            </div>
+        </form>
+        <!-- /.search form -->
+        <!-- Sidebar Menu -->
+        <ul class="sidebar-menu" data-widget="tree">
+            <li class="header" style="text-align:center">
+                <h4 style="color:whitesmoke;font-weight:bold">MENU</h4>
+            </li>
+            <!-- Optionally, you can add icons to the links -->
+            <li>
+                <a href="@Url.Action("Student","GiaoVien")">
+                    <i class="fa fa-link"></i>
+                    <span>Xem danh sách học sinh</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Teacher","GiaoVien")">
+                    <i class="fa fa-link"></i>
+                    <span>Xem danh sách giáo viên</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Class","GiaoVien")">
+                    <i class="fa fa-link"></i>
+                    <span>Xem danh sách lớp</span>
+                </a>
+            </li>
+            <li class="treeview">
+                <a href="@Url.Action("Mark","GiaoVien")">
+                    <i class="fa fa-link"></i>
+                    <span>Điểm</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                    <ul class="treeview-menu">
+                        <li><a href="@Url.Action("Mark","GiaoVien")">Xem điểm </a></li>
+                        <li><a href="@Url.Action("ThemDiem","GiaoVien")">Thêm điểm mới</a></li>
+                    </ul>
+                </a>
+            </li>
+        </ul>
+        <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+</aside>
+
+<br>
+<h2 style="text-align:center;font-weight:bold">Thêm Điểm</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @*Mã HS*@
+        <div class="form-group">
+            @Html.LabelFor(model => model.HocSinh.HoTen, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("MaHS")
+            </div>
+        </div>
+        @*Mã Môn*@
+        <div class="form-group">
+            @Html.LabelFor(model => model.MonHoc.TenMon, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("MaMon")
+            </div>
+        </div>
+        @*Mã học kỳ*@
+        <div class="form-group">
+            @Html.LabelFor(model => model.HocKy.TenHocKy, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("MaHocKy")
+            </div>
+        </div>
+        @*Điểm 15 phút*@
+        <div class="form-group">
+            @Html.LabelFor(model => model.Diem15phut, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Diem15phut, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Diem15phut, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        @*Điểm 1 tiết*@
+        <div class="form-group">
+            @Html.LabelFor(model => model.Diem1Tiet, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Diem1Tiet, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Diem1Tiet, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        @*Điểm học kỳ*@
+        <div class="form-group">
+            @Html.LabelFor(model => model.DiemHK, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DiemHK, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DiemHK, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        @*Điểm trung bình*@
+        @*<div class="form-group">
+                @Html.LabelFor(model => model.DiemTB, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.DiemTB, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.DiemTB, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+        @*Button*@
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Thêm" class="btn btn-default" /> |
+                <button>
+                    @Html.ActionLink("Trở về", "Mark")
+                </button>
+            </div>
+        </div>
+    </div>
+}

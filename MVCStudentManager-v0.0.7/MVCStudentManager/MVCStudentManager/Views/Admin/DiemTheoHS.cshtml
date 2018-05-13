@@ -1,0 +1,38 @@
+﻿@model IEnumerable<MVCStudentManager.Models.DiemMon>
+
+@{
+    ViewBag.Title = "DiemTheoHS";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<br>
+<h1 style="text-align:center; font-weight:bold">Danh sách Điểm của học sinh</h1>
+
+<div style="padding:20px">
+
+</div>
+
+<table class="table">
+    <tr>
+        <th style="width:50px"><span style="font-weight:bold">Môn học</span></th>
+        <th style="width:50px"><span style="font-weight:bold">Điểm 15 phút</span></th>
+        <th style="width:50px"><span style="font-weight:bold">Điểm 1 tiết</span></th>
+        <th style="width:50px"><span style="font-weight:bold">Điểm học kỳ</span></th>
+        <th style="width:50px"><span style="font-weight:bold">Điểm trung bình</span></th>
+        <th style="width:50px"></th>
+    </tr>
+    @foreach (var diem in Model)
+    {
+        <tr>
+            <td style="text-align:justify">@diem.MonHoc.TenMon</td>
+            <td style="text-align:justify">@diem.Diem15phut</td>
+            <td style="text-align:justify">@diem.Diem1Tiet</td>
+            <td style="text-align:justify">@diem.DiemHK</td>
+            <td style="text-align:justify">@String.Format("{0:0.00}", diem.DiemTB)</td>
+            <td>
+                @Html.ActionLink("Thêm điểm mới", "ThemDiem", new { id = diem.MaDiemMon }) |
+                @Html.ActionLink("Sửa", "SuaDiem", new { id = diem.MaDiemMon }) |
+                @Html.ActionLink("Xóa", "XoaDiem", new { id = diem.MaDiemMon })
+            </td>
+        </tr>
+    }
+</table>
