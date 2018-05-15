@@ -1,0 +1,86 @@
+﻿@model MVCStudentManager.Models.DiemMon
+
+@{
+    ViewBag.Title = "ThemDiem";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<br>
+<h2 style="text-align:center; font-weight:bold">Thêm Điểm</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @*Mã HS*@
+        <div class="form-group">
+            @Html.LabelFor(model => model.HocSinh.HoTen, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @*@Model.HocSinh.HoTen*@
+                @Html.DisplayFor(model => model.HocSinh.HoTen)
+            </div>
+        </div>
+        @*Mã học kỳ*@
+        <div class="form-group">
+            @Html.LabelFor(model => model.Lop.TenLop, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @*@Model.Lop.TenLop*@
+                @Html.DisplayFor(model => model.Lop.TenLop)
+            </div>
+        </div>
+        @*Mã Môn*@
+        <div class="form-group">
+            @Html.LabelFor(model => model.MonHoc.TenMon, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("MaMon")
+            </div>
+        </div>
+        @*Mã học kỳ*@
+        <div class="form-group">
+            @Html.LabelFor(model => model.HocKy.TenHocKy, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("MaHocKy")
+            </div>
+        </div>
+        @*Mã năm học*@
+        <div class="form-group">
+            @Html.LabelFor(model => model.NamHoc.TenNamHoc, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("MaNamHoc")
+            </div>
+        </div>
+        @*Điểm 15 phút*@
+        <div class="form-group">
+            @Html.LabelFor(model => model.Diem15phut, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Diem15phut, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Diem15phut, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        @*Điểm 1 tiết*@
+        <div class="form-group">
+            @Html.LabelFor(model => model.Diem1Tiet, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Diem1Tiet, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Diem1Tiet, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        @*Điểm học kỳ*@
+        <div class="form-group">
+            @Html.LabelFor(model => model.DiemHK, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DiemHK, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DiemHK, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        @*Button*@
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Thêm" class="btn btn-default" /> 
+            </div>
+        </div>
+    </div>
+}
+

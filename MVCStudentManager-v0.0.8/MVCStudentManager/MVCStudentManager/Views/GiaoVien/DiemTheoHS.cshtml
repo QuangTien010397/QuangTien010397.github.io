@@ -1,0 +1,83 @@
+﻿
+@{
+    ViewBag.Title = "DiemTheoHS";
+    Layout = "~/Views/Shared/_LayoutGV.cshtml";
+}
+
+<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!-- search form (Optional) -->
+        <h4 style="text-align:center; color:whitesmoke; font-weight:bold">Tìm theo tên</h4>
+        <form action="#" method="get" class="sidebar-form">
+            <div class="input-group">
+                @using (Html.BeginForm("Class", "GiaoVien", FormMethod.Get, new { @class = "navbar-form navbar-right", role = "search", id = "search-form", onsubmit = "return empty();" }))
+                {
+                    @*<input type="text" name="q" class="form-control" placeholder="Search...">*@
+                    <input type="text" id="SearchString" name="SearchString" value="" style="width: 170px;" class="form-control" placeholder="Search...">
+                    @*@Html.TextBox("SearchString")*@
+                    <span class="input-group-btn">
+                        <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>
+                    @*<p style="text-align:center">
+                            @Html.TextBox("SearchString")
+                        </p>
+                        <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                            <i class="fa fa-search"></i>
+                        </button>*@
+                }
+            </div>
+        </form>
+        <!-- /.search form -->
+        <!-- Sidebar Menu -->
+        <ul class="sidebar-menu" data-widget="tree">
+            <li class="header" style="text-align:center">
+                <h4 style="color:whitesmoke;font-weight:bold">MENU</h4>
+            </li>
+            <!-- Optionally, you can add icons to the links -->
+            <li>
+                <a href="@Url.Action("Teacher","GiaoVien")">
+                    <i class="fa fa-link"></i>
+                    <span>Xem danh sách giáo viên</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Class","GiaoVien")">
+                    <i class="fa fa-link"></i>
+                    <span>Xem danh sách lớp</span>
+                </a>
+            </li>
+        </ul>
+        <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+</aside>
+
+<br>
+<h1 style="text-align:center; font-weight:bold">Danh sách Điểm của học sinh</h1>
+
+<div style="padding:20px 0 0 30px">
+</div>
+<br>
+<table class="" border="1" align="center" style="width:1150px">
+    <tr>
+        <th style="width:200px; text-align:center"><span style="font-weight:bold">Môn học</span></th>
+        <th style="width:200px; text-align:center"><span style="font-weight:bold">Điểm 15 phút</span></th>
+        <th style="width:200px; text-align:center"><span style="font-weight:bold">Điểm 1 tiết</span></th>
+        <th style="width:200px; text-align:center"><span style="font-weight:bold">Điểm học kỳ</span></th>
+        <th style="width:200px; text-align:center"><span style="font-weight:bold">Điểm trung bình</span></th>
+    </tr>
+    @foreach (var diem in Model)
+    {
+        <tr>
+            <td style="text-align:center">@diem.MonHoc.TenMon</td>
+            <td style="text-align:center">@diem.Diem15phut</td>
+            <td style="text-align:center">@diem.Diem1Tiet</td>
+            <td style="text-align:center">@diem.DiemHK</td>
+            <td style="text-align:center">@String.Format("{0:0.00}", diem.DiemTB)</td>
+        </tr>
+    }
+</table>
+

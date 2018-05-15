@@ -1,0 +1,19 @@
+﻿@model IEnumerable<MVCStudentManager.Models.Lop>
+
+<li class="treeview">
+    <a href="#">
+        <i class="fa fa-link"></i>
+        <span>Quản lý học sinh theo lớp</span>
+        <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+        </span>
+        <ul class="treeview-menu">
+            <li>
+                @foreach (var item in Model)
+                {
+                    <a href="@Url.Action("HocSinhTheoLop","Admin",new { id = item.MaLop})">@item.TenLop</a>
+                }
+            </li>
+        </ul>
+    </a>
+</li>

@@ -1,0 +1,83 @@
+﻿@using MVCStudentManager.Models
+@using PagedList.Mvc;
+@model PagedList.PagedList<MVCStudentManager.Models.Lop>
+
+@{
+    /**/
+
+    ViewBag.Title = "Class";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<br />
+<h1 style="text-align:center; font-weight:bold">Quản lý danh sách lớp</h1>
+<div style="padding:0 30px 0 0">
+    @using (Html.BeginForm("Class", "Admin", FormMethod.Get, new { @class = "navbar-form navbar-right", role = "search", id = "search-form", onsubmit = "return empty();" }))
+    {
+        <p style="text-align:center">
+            Tìm : @Html.TextBox("SearchString")
+            <input type="submit" value="Tìm kiếm" />
+        </p>
+    }
+</div>
+<br>
+<div style="padding:20px 0 0 30px">
+    <a href="@Url.Action("ThemLop", "Admin")" style="background-color:lawngreen; color:black; padding:10px; font-weight:bold">
+        Thêm mới
+    </a>
+</div>
+<br>
+<table class="" border="1" align="center" style="width:1150px">
+    <tr>
+        <th style="width:200px; text-align:center">Khối</th>
+        <th style="width:200px; text-align:center">Năm học</th>
+        <th style="width:200px; text-align:center">Lớp</th>
+        <th style="width:200px; text-align:center">Giáo viên</th>
+        <th style="width:200px; text-align:center">Sỉ số</th>
+        <th style="width:200px; text-align:center"></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.Khoi.TenKhoi)
+            </td>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.NamHoc.TenNamHoc)
+            </td>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.TenLop)
+            </td>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.GiaoVien.TenGiaoVien)
+            </td>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.SiSo)
+            </td>
+            <td style="text-align:center; height:40px">
+                <a href="@Url.Action("HocSinhTheoLop","Admin", new { id = item.MaLop })" style="padding:5px ;color:black; background-color:deepskyblue; font-weight:bold">
+                    Chi tiết
+                </a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="@Url.Action("SuaLop","Admin", new { id = item.MaLop})" style="padding:5px ;color:black; background-color:yellow; font-weight:bold">
+                    Sửa
+                </a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="@Url.Action("XoaLop","Admin", new { id = item.MaLop })" style="padding:5px ;color:black; background-color:orangered; font-weight:bold">
+                    Xóa
+                </a>
+            </td>
+        </tr>
+    }
+</table>
+
+<div class="MenuTrang" style="padding:20px 0 0 30px">
+    Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+    @Html.PagedListPager(Model, page => Url.Action("Class", new { page = page }))
+
+    <style>
+        .MenuTrang li {
+            display: inline;
+        }
+    </style>
+</div>
