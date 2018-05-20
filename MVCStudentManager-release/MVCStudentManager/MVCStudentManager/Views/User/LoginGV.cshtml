@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "LoginGV";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<br>
+@using (Html.BeginForm())
+{
+    <h2 style="color:red; text-align:center">@ViewBag.Thongbao</h2>
+    <div class="container">
+        <div class="card"></div>
+        @Html.ValidationSummary(true)
+        <div style="text-align:center">
+            <h1 class="title" style="font-weight:bold">Đăng nhập cho giáo viên</h1>
+            <div>
+                <div class="input-container">
+                    <p> Tài khoản <input type="text" name="username" id="#{label}" required="required" /></p>
+                    @ViewData["Loi1"]
+                    <p>Mật khẩu <input type="password" name="password" id="#{label}" required="required" /></p>
+                    @ViewData["Loi2"]
+                </div>
+                <input type="submit" value="Đăng nhập" />
+            </div>
+        </div>
+    </div>
+}

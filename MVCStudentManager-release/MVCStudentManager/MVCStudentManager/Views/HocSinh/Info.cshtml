@@ -1,0 +1,102 @@
+﻿@using MVCStudentManager.Models
+
+@{
+    ViewBag.Title = "Info";
+    Layout = "~/Views/Shared/_LayoutHS.cshtml";
+}
+
+@{
+    HocSinh hs = (HocSinh)Session["Taikhoan"];
+}
+
+<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!-- search form (Optional) -->
+        <h4 style="text-align:center; color:whitesmoke; font-weight:bold">Tìm theo tên</h4>
+        <form action="#" method="get" class="sidebar-form">
+
+            <div class="input-group">
+                @using (Html.BeginForm("", "", FormMethod.Get, new { @class = "navbar-form navbar-right", role = "search", id = "search-form", onsubmit = "return empty();" }))
+                {
+                    @*<input type="text" name="q" class="form-control" placeholder="Search...">*@
+                    <input type="text" id="SearchString" name="SearchString" value="" style="width: 170px;" class="form-control" placeholder="Search...">
+                    @*@Html.TextBox("SearchString")*@
+                    <span class="input-group-btn">
+                        <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>
+                    @*<p style="text-align:center">
+                            @Html.TextBox("SearchString")
+                        </p>
+                        <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                            <i class="fa fa-search"></i>
+                        </button>*@
+                }
+            </div>
+        </form>
+        <!-- /.search form -->
+        <!-- Sidebar Menu -->
+        <ul class="sidebar-menu" data-widget="tree">
+            <li class="header" style="text-align:center">
+                <h4 style="color:whitesmoke;font-weight:bold">MENU</h4>
+            </li>
+            <!-- Optionally, you can add icons to the links -->
+            <li>
+                <a href="@Url.Action("Class","HocSinh")">
+                    <i class="fa fa-link"></i>
+                    <span>Xem danh sách lớp</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Info","HocSinh")">
+                    <i class="fa fa-link"></i>
+                    <span>Xem thông tin cá nhân</span>
+                </a>
+            </li>
+        </ul>
+        <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+</aside>
+<br>
+<h1 style="font-weight:bold; text-align:center">Thông tin cá nhân</h1>
+
+<table align="center" style="font-size:30px">
+    @using (Html.BeginForm())
+    {
+        <tr style="height:40px">
+            <td style="font-weight:bold; float:right"> Họ tên :</td>
+            <td>&nbsp; @hs.HoTen</td>
+        </tr>
+        <tr style="height:40px">
+            <td style="font-weight:bold; float:right"> Tên lớp :</td>
+            <td>&nbsp; @hs.Lop.TenLop</td>
+        </tr>
+        <tr style="height:40px">
+            <td style="font-weight:bold; float:right"> Ngày sinh :</td>
+            <td>&nbsp; @hs.NgaySinh</td>
+        </tr>
+        <tr style="height:40px">
+            <td style="font-weight:bold; float:right"> Giới tính :</td>
+            <td>&nbsp; @hs.GioiTinh</td>
+        </tr>
+        <tr style="height:40px">
+            <td style="font-weight:bold; float:right"> Email :</td>
+            <td>&nbsp; @hs.Email</td>
+        </tr>
+        <tr style="height:40px">
+            <td style="font-weight:bold; float:right"> Địa chỉ :</td>
+            <td>&nbsp; @hs.DiaChi</td>
+        </tr>
+        <tr style="height:40px">
+            <td style="font-weight:bold; float:right"> Tên tài khoản :</td>
+            <td>&nbsp; @hs.IDLogin</td>
+        </tr>
+    }
+</table>
+<p style="text-align:center; font-size:20pt;float:right;padding-right:20px">
+    <a href="@Url.Action("SuaHS","HocSinh", new { id = hs.MaHS })" style="padding:5px ;color:black; background-color:yellow; font-weight:bold">Sửa thông tin</a> |
+    <a href="@Url.Action("Index","HocSinh")" style="padding:5px ;color:black; background-color:navajowhite; font-weight:bold">Trở về</a>
+</p>

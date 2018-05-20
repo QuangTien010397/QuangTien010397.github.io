@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLHocSinh" Class="dbStudentManagerDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-O2938GT\SQLEXPRESS;Initial Catalog=QLHocSinh;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="QLHocSinhConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Admin" Member="Admins">
+    <Type Name="Admin">
+      <Column Name="UserAdmin" Type="System.String" DbType="VarChar(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PassAdmin" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="HoTen" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ThamSo" Member="ThamSos">
+    <Type Name="ThamSo">
+      <Column Name="MaThamSo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenThamSo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Ghichu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DiemMon" Member="DiemMons">
+    <Type Name="DiemMon">
+      <Column Name="MaDiemMon" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaHS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaMon" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaHocKy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaNamHoc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaLop" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Diem15phut" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Diem1Tiet" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DiemHK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DiemTB" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="HocKy_DiemMon" Member="HocKy" ThisKey="MaHocKy" OtherKey="MaHocKy" Type="HocKy" IsForeignKey="true" />
+      <Association Name="HocSinh_DiemMon" Member="HocSinh" ThisKey="MaHS" OtherKey="MaHS" Type="HocSinh" IsForeignKey="true" />
+      <Association Name="Lop_DiemMon" Member="Lop" ThisKey="MaLop" OtherKey="MaLop" Type="Lop" IsForeignKey="true" />
+      <Association Name="MonHoc_DiemMon" Member="MonHoc" ThisKey="MaMon" OtherKey="MaMon" Type="MonHoc" IsForeignKey="true" />
+      <Association Name="NamHoc_DiemMon" Member="NamHoc" ThisKey="MaNamHoc" OtherKey="MaNamHoc" Type="NamHoc" IsForeignKey="true" />
+    </Type>
+    <InsertFunction FunctionId="FunctionId1">
+      <Argument Parameter="maHS" Member="MaHS" />
+      <Argument Parameter="maMon" Member="MaMon" />
+      <Argument Parameter="maHocKy" Member="MaHocKy" />
+      <Argument Parameter="diem15phut" Member="Diem15phut" />
+      <Argument Parameter="diem1Tiet" Member="Diem1Tiet" />
+      <Argument Parameter="diemHK" Member="DiemHK" />
+    </InsertFunction>
+  </Table>
+  <Table Name="dbo.GiaoVien" Member="GiaoViens">
+    <Type Name="GiaoVien">
+      <Column Name="MaGiaoVien" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenGiaoVien" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DiaChi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DienThoai" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IDLogin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Pass" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MaMon" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="GiaoVien_Lop" Member="Lops" ThisKey="MaGiaoVien" OtherKey="MaGiaoVien" Type="Lop" />
+      <Association Name="MonHoc_GiaoVien" Member="MonHoc" ThisKey="MaMon" OtherKey="MaMon" Type="MonHoc" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HocKy" Member="HocKies">
+    <Type Name="HocKy">
+      <Column Name="MaHocKy" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenHocKy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="HocKy_DiemMon" Member="DiemMons" ThisKey="MaHocKy" OtherKey="MaHocKy" Type="DiemMon" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HocSinh" Member="HocSinhs">
+    <Type Name="HocSinh">
+      <Column Name="MaHS" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HoTen" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NgaySinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="GioiTinh" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DiaChi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDLogin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Pass" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MaLop" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="HocSinh_DiemMon" Member="DiemMons" ThisKey="MaHS" OtherKey="MaHS" Type="DiemMon" />
+      <Association Name="Lop_HocSinh" Member="Lop" ThisKey="MaLop" OtherKey="MaLop" Type="Lop" IsForeignKey="true" />
+    </Type>
+    <InsertFunction FunctionId="FunctionId2">
+      <Argument Parameter="maHS" Member="MaHS" />
+      <Argument Parameter="hoTen" Member="HoTen" />
+      <Argument Parameter="ngaySinh" Member="NgaySinh" />
+      <Argument Parameter="gioiTinh" Member="GioiTinh" />
+      <Argument Parameter="email" Member="Email" />
+      <Argument Parameter="diaChi" Member="DiaChi" />
+      <Argument Parameter="iDLogin" Member="IDLogin" />
+      <Argument Parameter="pass" Member="Pass" />
+      <Argument Parameter="maLop" Member="MaLop" />
+    </InsertFunction>
+    <DeleteFunction FunctionId="FunctionId3">
+      <Argument Parameter="maHS" Member="MaHS" />
+      <Argument Parameter="maLop" Member="MaLop" />
+    </DeleteFunction>
+  </Table>
+  <Table Name="dbo.Khoi" Member="Khois">
+    <Type Name="Khoi">
+      <Column Name="MaKhoi" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenKhoi" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Khoi_Lop" Member="Lops" ThisKey="MaKhoi" OtherKey="MaKhoi" Type="Lop" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Lop" Member="Lops">
+    <Type Name="Lop">
+      <Column Name="MaLop" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaKhoi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaNamHoc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TenLop" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MaGiaoVien" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SiSo" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="Lop_DiemMon" Member="DiemMons" ThisKey="MaLop" OtherKey="MaLop" Type="DiemMon" />
+      <Association Name="Lop_HocSinh" Member="HocSinhs" ThisKey="MaLop" OtherKey="MaLop" Type="HocSinh" />
+      <Association Name="GiaoVien_Lop" Member="GiaoVien" ThisKey="MaGiaoVien" OtherKey="MaGiaoVien" Type="GiaoVien" IsForeignKey="true" />
+      <Association Name="Khoi_Lop" Member="Khoi" ThisKey="MaKhoi" OtherKey="MaKhoi" Type="Khoi" IsForeignKey="true" />
+      <Association Name="NamHoc_Lop" Member="NamHoc" ThisKey="MaNamHoc" OtherKey="MaNamHoc" Type="NamHoc" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MonHoc" Member="MonHocs">
+    <Type Name="MonHoc">
+      <Column Name="MaMon" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenMon" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="MonHoc_DiemMon" Member="DiemMons" ThisKey="MaMon" OtherKey="MaMon" Type="DiemMon" />
+      <Association Name="MonHoc_GiaoVien" Member="GiaoViens" ThisKey="MaMon" OtherKey="MaMon" Type="GiaoVien" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NamHoc" Member="NamHocs">
+    <Type Name="NamHoc">
+      <Column Name="MaNamHoc" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenNamHoc" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="NamHoc_DiemMon" Member="DiemMons" ThisKey="MaNamHoc" OtherKey="MaNamHoc" Type="DiemMon" />
+      <Association Name="NamHoc_Lop" Member="Lops" ThisKey="MaNamHoc" OtherKey="MaNamHoc" Type="Lop" />
+    </Type>
+  </Table>
+  <Function Id="FunctionId3" Name="dbo.sp_XoaHS" Method="sp_XoaHS">
+    <Parameter Name="MaHS" Parameter="maHS" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MaLop" Parameter="maLop" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Id="FunctionId1" Name="dbo.sp_ThemDiemMon" Method="sp_ThemDiemMon">
+    <Parameter Name="MaHS" Parameter="maHS" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MaMon" Parameter="maMon" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MaHocKy" Parameter="maHocKy" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Diem15phut" Parameter="diem15phut" Type="System.Double" DbType="Float" />
+    <Parameter Name="Diem1Tiet" Parameter="diem1Tiet" Type="System.Double" DbType="Float" />
+    <Parameter Name="DiemHK" Parameter="diemHK" Type="System.Double" DbType="Float" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Id="FunctionId2" Name="dbo.sp_NhapHS" Method="sp_NhapHS">
+    <Parameter Name="MaHS" Parameter="maHS" Type="System.Int32" DbType="Int" />
+    <Parameter Name="HoTen" Parameter="hoTen" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="NgaySinh" Parameter="ngaySinh" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="GioiTinh" Parameter="gioiTinh" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="DiaChi" Parameter="diaChi" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="IDLogin" Parameter="iDLogin" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Pass" Parameter="pass" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="MaLop" Parameter="maLop" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

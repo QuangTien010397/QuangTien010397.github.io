@@ -1,0 +1,73 @@
+﻿
+@model IEnumerable<MVCStudentManager.Models.HocSinh>
+
+@{
+    ViewBag.Title = "HocSinhTheoLop";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<br>
+<h1 style="text-align:center; font-weight:bold">Quản lý học sinh trong lớp</h1>
+<div style="padding:0 30px 0 0">
+    @using (Html.BeginForm("HocSinhTheoLop", "Admin", FormMethod.Get, new { @class = "navbar-form navbar-right", role = "search", id = "search-form", onsubmit = "return empty();" }))
+    {
+        <p style="text-align:center">
+            Tìm : @Html.TextBox("SearchString")
+            <input type="submit" value="Tìm kiếm" />
+        </p>
+    }
+</div>
+<br>
+<div style="padding:20px 0 0 30px">
+    <a href="@Url.Action("ThemHS", "Admin")" style="background-color:lawngreen; color:black; padding:10px; font-weight:bold">
+        Thêm mới
+    </a>
+</div>
+<br>
+<table class="" border="1" align="center" style="width:1150px">
+    <tr>
+        <th style="width:200px ; text-align:center">Họ tên</th>
+        <th style="width:200px ; text-align:center">Ngày sinh</th>
+        <th style="width:100px ; text-align:center">Giới tính</th>
+        <th style="width:200px ; text-align:center">Email</th>
+        <th style="width:200px ; text-align:center">Địa chỉ</th>
+        <th style="width:100px ; text-align:center">Tên lớp</th>
+        <th style="width:200px ; text-align:center"> </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.HoTen)
+            </td>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.NgaySinh)
+            </td>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.GioiTinh)
+            </td>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.DiaChi)
+            </td>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.Lop.TenLop)
+            </td>
+            <td style="text-align:center; height:40px">
+                <a href="@Url.Action("DiemTheoHS","Admin", new { id = item.MaHS })" style="padding:5px ;color:black; background-color:deepskyblue; font-weight:bold">
+                    Xem điểm
+                </a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="@Url.Action("SuaHS","Admin", new { id = item.MaHS })" style="padding:5px ;color:black; background-color:yellow; font-weight:bold">
+                    Sửa
+                </a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="@Url.Action("XoaHS","Admin", new { id = item.MaHS })" style="padding:5px ;color:black; background-color:orangered; font-weight:bold">
+                    Xóa
+                </a>
+            </td>
+        </tr>
+    }
+</table>
+

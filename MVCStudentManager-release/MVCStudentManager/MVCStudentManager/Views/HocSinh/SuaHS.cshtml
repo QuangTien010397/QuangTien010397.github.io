@@ -1,0 +1,138 @@
+﻿@model MVCStudentManager.Models.HocSinh
+
+@{
+    ViewBag.Title = "SuaHS";
+    Layout = "~/Views/Shared/_LayoutHS.cshtml";
+}
+
+<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!-- search form (Optional) -->
+        <h4 style="text-align:center; color:whitesmoke; font-weight:bold">Tìm theo tên</h4>
+        <form action="#" method="get" class="sidebar-form">
+
+            <div class="input-group">
+                @using (Html.BeginForm("", "", FormMethod.Get, new { @class = "navbar-form navbar-right", role = "search", id = "search-form", onsubmit = "return empty();" }))
+                {
+                    @*<input type="text" name="q" class="form-control" placeholder="Search...">*@
+                    <input type="text" id="SearchString" name="SearchString" value="" style="width: 170px;" class="form-control" placeholder="Search...">
+                    @*@Html.TextBox("SearchString")*@
+                    <span class="input-group-btn">
+                        <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>
+                    @*<p style="text-align:center">
+                            @Html.TextBox("SearchString")
+                        </p>
+                        <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                            <i class="fa fa-search"></i>
+                        </button>*@
+                }
+            </div>
+        </form>
+        <!-- /.search form -->
+        <!-- Sidebar Menu -->
+        <ul class="sidebar-menu" data-widget="tree">
+            <li class="header" style="text-align:center">
+                <h4 style="color:whitesmoke;font-weight:bold">MENU</h4>
+            </li>
+            <!-- Optionally, you can add icons to the links -->
+            <li>
+                <a href="@Url.Action("Class","HocSinh")">
+                    <i class="fa fa-link"></i>
+                    <span>Xem danh sách lớp</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Info","HocSinh")">
+                    <i class="fa fa-link"></i>
+                    <span>Xem thông tin cá nhân</span>
+                </a>
+            </li>
+        </ul>
+        <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+</aside>
+
+<br>
+<h1 style="text-align:center; font-weight:bold">Sửa thông tin cá nhân</h1>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.MaHS)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.HoTen,"Họ tên", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.HoTen, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.HoTen, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NgaySinh, "Ngày sinh", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NgaySinh, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NgaySinh, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.GioiTinh,"Giới tính", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.GioiTinh, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.GioiTinh, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email,"Email", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DiaChi,"Địa chỉ", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DiaChi, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DiaChi, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Pass,"Mật khẩu", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.PasswordFor(model => model.Pass, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Pass, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.MaLop,"Tên lớp", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Model.Lop.TenLop
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" /> |
+                <button>
+                    @Html.ActionLink("Trở về", "Index")
+                </button>
+            </div>
+        </div>
+    </div>
+}
+
+

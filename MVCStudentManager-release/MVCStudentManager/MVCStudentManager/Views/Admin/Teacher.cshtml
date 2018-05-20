@@ -1,0 +1,74 @@
+﻿@using MVCStudentManager.Models
+@using PagedList.Mvc;
+@model PagedList.PagedList<MVCStudentManager.Models.GiaoVien>
+
+@{
+    ViewBag.Title = "Teacher";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<br>
+<h2 style="text-align:center; font-weight:bold">Danh sách giáo viên</h2>
+<div style="padding:0 30px 0 0">
+    @using (Html.BeginForm("Teacher", "Admin", FormMethod.Get, new { @class = "navbar-form navbar-right", role = "search", id = "search-form", onsubmit = "return empty();" }))
+    {
+        <p style="text-align:center">
+            Tìm : @Html.TextBox("SearchString")
+            <input type="submit" value="Tìm kiếm" />
+        </p>
+    }
+</div>
+<br>
+
+<div style="padding:20px 0 0 30px">
+    <a href="@Url.Action("ThemGV", "Admin")" style="background-color:lawngreen; color:black; padding:10px; font-weight:bold">
+        Thêm mới
+    </a>
+</div>
+<br>
+<table class="" border="1" align="center" style="width:1150px">
+    <tr>
+        <th style="width:200px; text-align:center">Tên giáo viên</th>
+        <th style="width:200px; text-align:center">Địa chỉ</th>
+        <th style="width:200px; text-align:center">Điện thoại</th>
+        <th style="width:200px; text-align:center">Môn học</th>
+        <th style="width:200px; text-align:center"> </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.TenGiaoVien)
+            </td>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.DiaChi)
+            </td>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.DienThoai)
+            </td>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.MonHoc.TenMon)
+            </td>
+            <td style="text-align:center; height:40px">
+                <a href="@Url.Action("SuaGV","Admin", new { id = item.MaGiaoVien })" style="padding:5px ;color:black; background-color:yellow; font-weight:bold">
+                    Sửa
+                </a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="@Url.Action("XoaGV","Admin", new { id = item.MaGiaoVien })" style="padding:5px ;color:black; background-color:orangered; font-weight:bold">
+                    Xóa
+                </a>
+            </td>
+        </tr>
+    }
+</table>
+
+<div class="MenuTrang" style="padding:20px 0 0 30px">
+    Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+    @Html.PagedListPager(Model, page => Url.Action("Teacher", new { page = page }))
+
+    <style>
+        .MenuTrang li {
+            display: inline;
+        }
+    </style>
+</div>
